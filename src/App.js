@@ -37,6 +37,11 @@ export default function App() {
           </div>
           <h1>DCODELAB</h1>
           <h2>UI/UX</h2>
+
+          <a href="#" class="btnView">
+            View More
+          </a>
+          
         </article>
       </section>
       <ImgUpload></ImgUpload>
