@@ -37,7 +37,7 @@ export default function ImgUpload() {
           onChange={e => onChange(e)}
         />
 
-        <p>base64 string: {base64Data}</p>
+        {/*<p>base64 string: {base64Data}</p>*/}
         <br />
         {/* base64Data != null && <img src={`data:image;base64,${base64Data}`}/> */}
       </div>
