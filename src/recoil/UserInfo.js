@@ -11,6 +11,7 @@ export const UserInfo = atom({
     moreInfo: null,
     userPhone: null,
     userEmail: null,
+    userlink: null,
   },
   effects: [persistAtom],
 });

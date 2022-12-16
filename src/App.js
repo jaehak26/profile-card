@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './style.css';
 import MenuIcon from '@mui/icons-material/Menu';
+import Button from '@mui/material/Button';
 import Icon from '@mui/material/Icon';
 import { loadCSS } from 'fg-loadcss';
 import { FONTAWSOME_LINK } from './IconLink';
@@ -51,7 +52,10 @@ export default function App() {
               {userCoil.moreInfo ? userCoil.moreInfo : 'for more information'}
             </h2>
 
-            <a href="#" class="btnView">
+            <a
+              href={userCoil.userlink ? userCoil.userlink : '#'}
+              class="btnView"
+            >
               View More
             </a>
 
@@ -83,6 +87,7 @@ export default function App() {
       </p>
       <InputUserInfo></InputUserInfo>
       <ImgUpload></ImgUpload>
+      <Button variant="outlined">서버로 전송</Button>
     </div>
   );
 }
