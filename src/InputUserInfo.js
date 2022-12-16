@@ -23,16 +23,16 @@ export default function InputUserInfo()) {
 
     return (<div>
       <div>
-        <TextField label="Name" onChange={onChangeName}/>
+        <TextField label="Name" onChange={(e) => onChangeName(e)}/>
       </div>
       <div>
-        <TextField label="Name" onChange={onChangeMoreInfo}/>
+        <TextField label="Name" onChange={(e) => onChangeMoreInfo(e)}/>
       </div>
       <div>
-        <TextField label="Name" onChange={onChangePhone}/>
+        <TextField label="Name" onChange={(e) => onChangePhone(e)}/>
       </div>
       <div>
-        <TextField label="Name" onChange={onChangeEmail}/>
+        <TextField label="Name" onChange={(e) => onChangeEmail(e)}/>
       </div>
     <Button>프로필 변경</Button>
     </div>
