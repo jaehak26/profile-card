@@ -6,11 +6,11 @@ const { persistAtom } = recoilPersist();
 export const UserInfo = atom({
   key: 'UserInfo',
   default: {
-    userId: '',
-    userNName: '',
-    moreInfo: '',
-    userPhone: '',
-    userEmail: '',
+    userId: null,
+    userNName: null,
+    moreInfo: null,
+    userPhone: null,
+    userEmail: null,
   },
   effects: [persistAtom],
 });
