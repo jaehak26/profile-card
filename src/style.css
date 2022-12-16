@@ -78,7 +78,7 @@ section article.profile h2 {
   font-weight: normal;
   font-size: 12px;
   font-family: 'arial';
-  color: #bbb;
+  color: #888;
   margin-bottom: 30px;
 }
 
@@ -98,4 +98,24 @@ section a.btnView {
   text-align: center;
   background: linear-gradient(45deg, #4affff, #35e0f7);
   box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.493);
+}
+
+section ul.contact {
+  margin-bottom: 25px;
+}
+
+section ul.contact li {
+  width: 100%;
+  padding: 10px 0px;
+  border-bottom: 1px soild #eee;
+  text-align: left;
+  margin-left: 35px;
+}
+
+section ul.contact li span.afterIcon {
+  font-family: 'orbitron';
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #555;
 }

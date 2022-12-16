@@ -9,6 +9,8 @@ import ImgUpload from './ImgUpload';
 import { useRecoilState } from 'recoil';
 import { inputBase64 } from './recoil/Base64';
 
+import { ICON_CSS, PHONE_ICON_CSS } from './style';
+
 export default function App() {
   const [baseDataCoil, setBaseDataCoil] = useRecoilState(inputBase64);
 
@@ -35,13 +37,27 @@ export default function App() {
               <img src={`data:image;base64,${baseDataCoil}`} alt="profile" />
             )}
           </div>
-          <h1>DCODELAB</h1>
-          <h2>UI/UX</h2>
+          <h1>{null ? '' : 'name'}</h1>
+          <h2>{null ? '' : 'for more information'}</h2>
 
           <a href="#" class="btnView">
             View More
           </a>
-          
+
+          <ul class="contact">
+            <li>
+              <Icon
+                baseClassName="fas"
+                className="fa-phone"
+                sx={{ ...ICON_CSS }}
+              />
+              <span className="afterIcon">{null ? '' : '010-0000-0000'}</span>
+            </li>
+            <li>
+              <Icon baseClassName="fas" className="fa-envelope" sx={ICON_CSS} />
+              <span className="afterIcon">{null ? '' : 'email@email.com'}</span>
+            </li>
+          </ul>
         </article>
       </section>
       <ImgUpload></ImgUpload>
