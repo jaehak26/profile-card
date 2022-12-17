@@ -12,6 +12,9 @@ import { inputBase64 } from './recoil/Base64';
 import { UserInfo } from './recoil/UserInfo';
 import { onClickDownload } from './OnClick';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
+
 import { ICON_CSS, PHONE_ICON_CSS } from './style';
 
 export default function App() {
@@ -88,6 +91,7 @@ export default function App() {
       <InputUserInfo></InputUserInfo>
       <ImgUpload></ImgUpload>
       <Button variant="outlined">서버로 전송</Button>
+      <FontAwesomeIcon icon={faCircleInfo} />
     </div>
   );
 }
