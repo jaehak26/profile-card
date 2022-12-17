@@ -14,7 +14,7 @@ import { onClickDownload } from './OnClick';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
-
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { ICON_CSS, PHONE_ICON_CSS } from './style';
 
 export default function App() {
@@ -91,7 +91,20 @@ export default function App() {
       <InputUserInfo></InputUserInfo>
       <ImgUpload></ImgUpload>
       <Button variant="outlined">서버로 전송</Button>
-      <FontAwesomeIcon icon={faCircleInfo} />
+      <FontAwesomeIcon icon={faCircleInfo} size="2x" />
+      <Icon baseClassName="fa" className="fa-info" />
+      <InfoOutlinedIcon />
+
+      <div class="filebox">
+        <label for="file">파일찾기</label>
+        <input type="file" id="file" />
+      </div>
+      <Button variant="outlined">
+        <label>
+          파일찾기
+          <input type="file" id="file" />
+        </label>
+      </Button>
     </div>
   );
 }
